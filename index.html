@@ -1,22 +1,19 @@
-
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0b0b">
-  <meta name="description" content="Barbería Salva. Cortes de pelo, degradados y arreglos de barba con estilo.">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Barbería Salva. Cortes de pelo, degradados y arreglo de barba con estilo profesional.">
   <title>Barbería Salva | Estilo y tradición</title>
-
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
 
   <header class="site-header">
     <div class="nav-wrap">
-
       <a class="brand" href="#inicio" aria-label="Barbería Salva, inicio">
         <span class="brand-crown">♛</span>
         <span class="brand-small">BARBERÍA</span>
@@ -24,7 +21,11 @@
         <span class="brand-scissors">✂</span>
       </a>
 
-      <nav class="main-nav" aria-label="Navegación principal">
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
@@ -32,70 +33,51 @@
         <a href="#contacto">Contacto</a>
       </nav>
 
-      <a class="button button-gold nav-book"
-         href="https://wa.me/"
-         target="_blank"
-         rel="noopener">
-        Reservar cita
-      </a>
-
+      <a class="button button-gold nav-book" href="#contacto">Reservar cita</a>
     </div>
   </header>
 
   <main>
-
     <section class="hero" id="inicio">
       <div class="hero-shade"></div>
-
       <div class="hero-content">
         <div class="hero-copy">
           <p class="eyebrow">BARBERÍA · ESTILO · TRADICIÓN</p>
-
-          <h1>Tu estilo.<br>
-            <span>Tu personalidad.</span>
-          </h1>
-
+          <h1>Tu estilo.<br><span>Tu personalidad.</span></h1>
           <p class="hero-description">
-            Mucho más que un corte de pelo. Encuentra tu estilo
-            con un servicio profesional, cuidado al detalle y
-            el ambiente de una barbería auténtica.
+            Mucho más que un corte de pelo. Encuentra tu estilo con
+            un servicio profesional, cuidado al detalle y el ambiente
+            de una barbería auténtica.
           </p>
-
           <div class="hero-actions">
-            <a class="button button-gold"
-               href="#servicios">Ver servicios</a>
-
-            <a class="button button-outline"
-               href="#contacto">Contactar</a>
+            <a class="button button-gold" href="#servicios">Ver servicios</a>
+            <a class="button button-outline" href="#contacto">Contactar</a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="services-strip" id="servicios">
-      <div class="service-item">
+      <article class="service-item">
         <span class="service-icon">✂</span>
         <h3>Corte clásico</h3>
         <p>Precisión y estilo para tu día a día.</p>
-      </div>
-
-      <div class="service-item">
+      </article>
+      <article class="service-item">
         <span class="service-icon">♛</span>
         <h3>Degradados</h3>
         <p>Acabados modernos y personalizados.</p>
-      </div>
-
-      <div class="service-item">
+      </article>
+      <article class="service-item">
         <span class="service-icon">⚜</span>
         <h3>Arreglo de barba</h3>
         <p>Perfilado y cuidado con todo detalle.</p>
-      </div>
-
-      <div class="service-item">
+      </article>
+      <article class="service-item">
         <span class="service-icon">★</span>
         <h3>Estilo personal</h3>
         <p>Un look adaptado a ti.</p>
-      </div>
+      </article>
     </section>
 
     <section class="about-section" id="nosotros">
@@ -105,96 +87,77 @@
           alt="Interior de una barbería profesional"
           loading="lazy">
       </div>
-
       <div class="about-copy">
         <p class="eyebrow">SOBRE NOSOTROS</p>
         <h2>La barbería donde <span>nace tu estilo</span></h2>
-
         <p>
           En Barbería Salva creemos que cada persona tiene su propio
-          estilo. Por eso cuidamos cada corte y cada detalle para
-          ofrecerte una experiencia cercana y profesional.
+          estilo. Cuidamos cada corte y cada detalle para ofrecerte
+          una experiencia cercana y profesional.
         </p>
-
         <p>
           Tanto si buscas un corte clásico como un degradado moderno,
           queremos que salgas sintiéndote bien y con un estilo que
           hable por ti.
         </p>
-
-        <a class="button button-gold" href="#contacto">
-          Ven a conocernos
-        </a>
+        <a class="button button-gold" href="#contacto">Ven a conocernos</a>
       </div>
     </section>
 
     <section class="gallery-section" id="galeria">
-      <div class="gallery-intro">
+      <div class="section-heading">
         <p class="eyebrow">NUESTRO TRABAJO</p>
         <h2>Estilo en cada <span>detalle</span></h2>
         <p>Inspiración, precisión y personalidad en cada corte.</p>
       </div>
-
       <div class="gallery-grid">
         <img
           src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=85"
-          alt="Corte de pelo masculino"
-          loading="lazy">
-
+          alt="Corte de pelo masculino" loading="lazy">
         <img
           src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=85"
-          alt="Barbero trabajando en un corte"
-          loading="lazy">
-
+          alt="Barbero trabajando en un corte" loading="lazy">
         <img
           src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=85"
-          alt="Herramientas y trabajo de barbería"
-          loading="lazy">
+          alt="Trabajo profesional de barbería" loading="lazy">
       </div>
     </section>
 
     <section class="contact-section" id="contacto">
-      <div class="gallery-intro">
+      <div class="section-heading">
         <p class="eyebrow">ESTAMOS A TU DISPOSICIÓN</p>
         <h2>Reserva tu <span>cita</span></h2>
-        <p>Contacta con nosotros y encuentra tu próximo estilo.</p>
+        <p>Contacta con nosotros para encontrar tu próximo estilo.</p>
       </div>
 
       <div class="contact-details">
-        <div class="contact-detail">
-          <h3>📍 Dirección</h3>
-          <p>Añade aquí la dirección de tu barbería</p>
-        </div>
-
-        <div class="contact-detail">
-          <h3>🕒 Horario</h3>
-          <p>Añade aquí tus horarios de apertura</p>
-        </div>
-
-        <div class="contact-detail">
-          <h3>📞 Teléfono</h3>
-          <p>Añade aquí tu número de teléfono</p>
-        </div>
+        <article class="contact-detail">
+          <h3>Dirección</h3>
+          <p>Añade aquí la dirección de tu barbería.</p>
+        </article>
+        <article class="contact-detail">
+          <h3>Horario</h3>
+          <p>Añade aquí tus horarios de apertura.</p>
+        </article>
+        <article class="contact-detail">
+          <h3>Teléfono</h3>
+          <p>Añade aquí tu número de teléfono.</p>
+        </article>
       </div>
 
       <div class="social-links">
-        <a class="button button-gold"
-           href="https://wa.me/"
-           target="_blank"
-           rel="noopener">
+        <a class="button button-gold" href="https://wa.me/" target="_blank" rel="noopener">
           Reservar por WhatsApp
         </a>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="#inicio">
+    <a class="brand footer-brand" href="#inicio">
       <span class="brand-small">BARBERÍA</span>
       <span class="brand-name">SALVA</span>
     </a>
-
     <p>Estilo, tradición y personalidad.</p>
     <p>© <span id="year">2026</span> Barbería Salva. Todos los derechos reservados.</p>
   </footer>
